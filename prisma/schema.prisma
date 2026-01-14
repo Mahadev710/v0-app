@@ -11,9 +11,4 @@ model User{
   id String @id @default(cuid())
   name String
   email String @unique
-  image String?
-  clerkId String @unique
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
 }
